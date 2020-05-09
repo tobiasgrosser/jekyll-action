@@ -51,7 +51,9 @@ echo "Committed changes"
 git log
 git branch
 git remote add origin $remote_repo
-echo git push --force $remote_repo master:$remote_branch
+echo "Test"
+echo git push --force origin master:$remote_branch
+echo "Test 2"
 git push --force origin master:$remote_branch
 rm -fr .git && \
 cd .. 
