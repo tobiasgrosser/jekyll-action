@@ -40,6 +40,7 @@ fi
 
 echo "Publishing to ${GITHUB_REPOSITORY} on branch ${remote_branch}"
 
+set -x
 remote_repo="https://${JEKYLL_PAT}@github.com/${GITHUB_REPOSITORY}.git" && \
 git init && \
 git config user.name "${GITHUB_ACTOR}" && \
