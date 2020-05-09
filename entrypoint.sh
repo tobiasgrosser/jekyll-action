@@ -20,7 +20,7 @@ else
 fi
 
 JEKYLL_ENV=production bundle exec jekyll build -s ${JEKYLL_SRC} -d build
-echo "Jekyll build done"
+echo "Jekyll build done II"
 
 cd build
 
