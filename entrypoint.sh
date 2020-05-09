@@ -50,7 +50,8 @@ git commit -m "jekyll build from Action ${GITHUB_SHA}"
 echo "Committed changes"
 git log
 git branch
-git push --force $remote_repo master:$remote_branch && \
+echo git push --force $remote_repo master:$remote_branch
+git push --force $remote_repo master:$remote_branch
 rm -fr .git && \
 cd .. 
 
